@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Character encoding for proper text rendering -->
+  <meta charset="UTF-8">
+  <!-- Responsive viewport for mobile compatibility -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta tags for SEO -->
+  <meta name="description"
+    content="ReaEspresso - Expert Salesforce solutions to drive growth, efficiency, and innovation." />
+  <meta name="keywords" content="Salesforce, ReaEspresso, CRM, digital transformation, consulting" />
+  <meta name="author" content="ReaEspresso" />
+  <!-- Page title displayed in browser tab -->
+  <title>ReaEspresso | Salesforce Partner</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ReaEspresso",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Eternity Mall, Teen Haath Naka, Lal Bahadur Shastri Marg",
+        "addressLocality": "Thane West, Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400604",
+        "addressCountry": "IN"
+      },
+      "telephone": "+918097904244",
+      "url": "https://www.reaespresso.com"
+    }
+    </script>
+  <!-- Favicon for browser tab and bookmarks -->
+  <link rel="icon" href="assets/icon/favicon.ico" type="icon/" />
+  <style>
+    /* Enable mandatory scroll snapping */
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* Retain smooth scrolling */
+}
+
+/* Prevent content from hiding under fixed topbar and navbar */
+body {
+  padding-top: 72px; /* Matches headerOffset in JS (topbar ~32px + navbar ~40px) */
+  margin: 0;
+  /* Ensure no extra margins */
+}
+
+/* Ensure scroll sections snap correctly */
+.scroll-section {
+  
+  position: relative;
+  box-sizing: border-box;
+  scroll-snap-align: start; /* Snap to section top */
+}
+
+/* Override specific section heights */
+.hero.scroll-section {
+  min-height: calc(100vh - 72px); /* Full viewport for hero */
+}
+
+#schedule-demo.scroll-section {
+  min-height: calc(80vh - 72px); /* Shorter for demo image section */
+}
+
+#projects.scroll-section {
+  min-height: calc(100vh - 72px); /* Taller for project grid */
+}
+
+#salesforce-apps.scroll-section {
+  min-height: calc(100vh - 72px); /* Taller for slider */
+}
+
+#about.scroll-section {
+  min-height: calc(100vh - 72px)!important; 
+
+}
+
+#footer.scroll-section{
+  min-width: none;
+}
+
+/* #founder-section.scroll-section{
+  min-height: calc(100vh - 72px)!important;
+} */
+
+/* Ensure fixed positioning for topbar and navbar */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.main-navbar {
+  position: sticky;
+  top: 32px;
+  z-index: 1000;
+}
+
+/* Prevent slider swipe from triggering page scroll */
+.card-slider {
+  touch-action: pan-x; /* Allow horizontal swipe, restrict vertical scroll */
+}
+
+/* Ensure slider container doesn’t interfere with snapping */
+.salesforce-apps-section {
+  overflow: hidden; 
+}
+#salesforce-apps-section .scroll-section{
+  scroll-snap-type: both mandatory;
+}
+
+  </style>
+</head>
+
+<body
+  style="background-image: url('assets/images/bg3.png'); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover; font-family: 'Segoe UI', sans-serif; color: var(--dark); line-height: 1.6; min-height: 100vh; overflow-x: hidden;">
+  <!-- Topbar Section: Displays contact and social media links -->
+  <div class="topbar fade-in">
+    <div class="topbar-right">
+      <!-- Email contact link with icon -->
+      <a href="mailto:sales@reaespresso.com">
+        <img src="assets/images/mail.png" alt="Email" class="topbar-icon"> sales@reaespresso.com
+      </a>
+      <!-- LinkedIn social media link with icon -->
+      <a href="https://www.linkedin.com/company/107035292/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BPjigJWqSTJKGAxC0fGD%2F3A%3D%3D"
+        target="_blank">
+        <img src="assets/images/linkedin.png" alt="LinkedIn" class="topbar-icon">
+      </a>
+      <!-- WhatsApp contact link with icon -->
+      <a href="https://wa.me/918097904244" target="_blank">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp" class="topbar-icon">
+      </a>
+      <!-- Facebook social media link with icon -->
+      <a href="https://www.facebook.com/share/16PgB65Vn8/" target="_blank">
+        <img src="assets/images/facebook.png" alt="Facebook" class="topbar-icon">
+      </a>
+      <a href="https://www.instagram.com/reaespresso?igsh=NTRya3BldWxhd3Zp" target="_blank">
+        <img src="assets/images/instagram.png" alt="Instagram" class="topbar-icon">
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar: Sticky navbar with logo, links, and dropdown -->
+  <div class="main-navbar fade-in">
+    <!-- Left section with company logo -->
+    <div class="navbar-left">
+      <a href="/">
+        <img src="assets/images/logo242424.png" alt="ReaEspresso Logo" class="main-logo" />
+      </a>
+    
+    </div>
+    <!-- Right section with navigation links -->
+    <div class="navbar-right">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#our_strength" class="nav-link dropdown-toggle">Our Strength</a>
+      <a href="#products" class="nav-link dropdown-toggle">Products</a>
+      <a href="#industries" class="nav-link dropdown-toggle">Industries</a>
+      <a href="#projects" class="nav-link dropdown-toggle">Case Studies</a>
+      <a href="#salesforce-apps" class="nav-link dropdown-toggle">Applications</a>
+      <a href="#about4" class="nav-link ">About Us</a>
+      <a href="#contact-form" class="nav-link">Contact Us</a>
+    </div>
+    <!-- Hamburger menu for mobile navigation -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero scroll-section scroll-section ">
+    </div>
+    <div class="hero-content">
+      <h1 class="fade-in">Supercharge Your Business with Expert Salesforce Solutions</h1>
+      <p class="fade-in">Drive Growth, Efficiency, and Innovation with Our Proven Salesforce Expertise.</p>
+      <div class="hero-ctas">
+        <a href="#contact-form" class="btn primary-btn fade-in">Let’s Talk</a>
+        <a href="#projects" class="btn secondary-btn fade-in">See Our Success Stories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Section: Image with Demo Button -->
+  <section id="schedule-demo" class="demo-image-section scroll-section">
+    <div class="demo-image-container">
+      <div class="demo-text">
+        <h2>Demo Sales Cloud</h2>
+        <p>Get to know your future sales platform!</p>
+      </div>
+      <img src="assets/images/Image-76.png" alt="Schedule a Demo" class="demo-image" loading="lazy">
+      <div class="demo-button-container">
+        <a href="#contact-form" class="btn primary-btn">Schedule a Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo presentation vedio -->
+  <section id="sales-presentaton" class="demo-section scroll-section">
+    <h2 class="section-title">Sales Presentation Demo</h2>
+    <div class="demo-container2">
+      <!-- Left Text Content -->
+      <div class="demo-text">
+        
+        <p class="subtitle">Explore some key features of Sales Cloud</p>
+        <p class="highlight">Do you agree that this solution looks very user-friendly?</p>
+        <p>Now imagine that you have such a tool always at hand. Upgrade your sales process with intuitive tools and
+          gain valuable insight into your business. Adapt to the changing market and reliably meet your customers’
+          expectations. Draw conclusions from the data you collect with the help of the best CRM in the world, and
+          improve your sales strategy.</p>
+        <p class="bold">Earn more customers, sell more and grow with Salesforce Sales Cloud!</p>
+      </div>
+
+      <!-- Right Video Embed -->
+      <div class="demo-video">
+        <iframe width="100%" height="315"
+          src="https://www.youtube.com/embed/2ZkjhgBNI-Y?feature=oembed&amp;enablejsapi=1&amp;origin=https://pl.cloudity.digital"
+          title="Salesforce Sales Cloud Overview Demo" frameborder="0" />
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section: Information about the company, scale, and founders -->
+  <section id="our_strength" class="about-section scroll-section">
+    <!-- Card 2: Company scale with stats -->
+    <div class="container1">
+      <h2 class="section-title">Our Strength</h2>
+      <div id="our-Scale" class="about-card right">
+        <div class="image">
+          <img src="assets/images/undraw_growth-curve_kzjb.svg" alt="Our Scale">
+        </div>
+        <div class="text">
+          <!-- <h3>Our Strength</h3> -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <i class="fas fa-users stat-icon"></i>
+              <span class="stat-number" data-target="10">10+</span>
+              <p>Strong SFDC Bench</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-certificate stat-icon"></i>
+              <span class="stat-number" data-target="50">50+</span>
+              <p>SFDC Licenses</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-tasks stat-icon"></i>
+              <span class="stat-number" data-target="60">60+</span>
+              <p>Completed Projects</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-building stat-icon"></i>
+              <span class="stat-number" data-target="2">2</span>
+              <p>Offices – Mumbai & Pune</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users-cog stat-icon"></i>
+              <span class="stat-number" data-target="30">30+</span>
+              <p>Clients Served</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- About Section: Information about the company, scale, and founders -->
+  <section id="products" class="about-section scroll-section">
+    <div class="container1">
+      <h2 class="section-title">Products</h2>
+      <!-- Card 1: Company overview -->
+      <!-- Card 3: Salesforce expertise -->
+      <div id="salesforce-practices" class="about-card left">
+        <div class="text">
+          <!-- <h3>Salesforce Practices</h3> -->
+          <ul>
+            At ReaEspresso, our Salesforce expertise spans across a wide range of clouds and tools,
+            enabling us to deliver end-to-end digital transformation solutions tailored to client needs. Our
+            comprehensive Salesforce practices include:
+            <li><strong>Service Cloud</strong></li>
+            We implement and optimize Salesforce Service Cloud to enhance customer service operations.
+            This includes case management, automation, knowledge base integration, and AI-driven support for faster,
+            more efficient resolution of customer issues.
+            <li><strong>Sales Cloud</strong></li>
+            Our team leverages Salesforce Sales Cloud to streamline and supercharge sales processes.
+            From lead generation and pipeline management to forecasting and analytics, we help businesses increase sales
+            productivity and close deals faster.
+            <li><strong>Marketing Cloud</strong></li>
+            We deploy Salesforce Marketing Cloud solutions to create personalized, multi-channel
+            marketing campaigns. Our expertise includes customer journey automation, email marketing, social media
+            engagement, and marketing analytics.
+            <li><strong>Community Cloud</strong></li>
+            Using Salesforce Community Cloud (now known as Experience Cloud), we build
+            branded customer, partner, and employee portals that promote collaboration, self-service, and engagement.
+            <li><strong>CPQ (Configure, Price, Quote)</strong></li>
+            Our team implements Salesforce CPQ to simplify the configuration of complex product
+            offerings, automate pricing rules, and generate error-free quotes quickly—accelerating the quote-to-cash
+            process.
+            <li><strong>Experience Cloud</strong></li>
+            With Salesforce Experience Cloud, we design interactive digital experiences that are deeply
+            integrated with CRM data, enabling personalized web portals, forums, and mobile apps for users and
+            stakeholders.
+            <li><strong>Velocity (Salesforce Industries)</strong></li>
+            We specialize in Velocity, now known as Salesforce Industries, offering
+            pre-built industry-specific solutions. This includes tailored CRM systems for sectors like
+            telecommunications, insurance, healthcare, and public services—helping clients achieve faster time-to-value.
+          </ul>
+        </div>
+        <div class="image">
+          <img src="assets/images/undraw_data-processing_z2q6.svg" alt="Salesforce Practices">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card 4: Industries served -->
+  <section id="industries" class="about-section scroll-section">
+    <div class="container1">
+      <h2 class="section-title">Industries</h2>
+      <div id="industries" class="about-card right">
+        <div class="image">
+          <img src="assets/images/undraw_world_bdnk.svg" alt="Industries Served">
+        </div>
+        <div class="text">
+          <!-- <h3>Industries We Serve</h3> -->
+          <p>At <strong>ReaEspresso</strong>, we deliver tailored Salesforce solutions that streamline operations,
+            boost customer engagement, and drive digital transformation across diverse industries:</p>
+          <ul>
+            <li>
+              <strong>Real Estate:</strong>The real estate industry involves the buying, selling, leasing,
+              and management of properties including residential, commercial, and industrial spaces.
+              With Salesforce, real estate businesses can streamline lead tracking, automate client communications,
+              and manage property listings more efficiently. Implementing Salesforce solutions enhances customer
+              relationship management
+              and drives smarter, data-driven decision-making across the property lifecycle.
+            </li>
+            <li>
+              <strong>Manufacturing:</strong> We have delivered robust Salesforce-based solutions for
+              Keysight and other prominent US-based manufacturers, utilizing
+              Sales Cloud, Service Cloud, and CPQ to enhance field
+              service efficiency, manage complex product configurations, and optimize after-sales support.
+            </li>
+
+            <li>
+              <strong>Public Sector:</strong> We’ve worked with the U.S. government to implement
+              Health Cloud and OmniStudio solutions, enabling agencies to manage
+              compensation, services, and benefits more effectively through automated workflows and citizen-facing
+              platforms.
+            </li>
+            <li>
+              <strong>Ecommerce:</strong> We have led B2B and B2C digital transformation projects for
+              clients like Driscoll’s, leveraging Salesforce Sales Cloud,
+              Service Cloud, and Commerce Cloud to unify customer experiences across
+              digital storefronts, automate workflows, and drive scalable growth.
+            </li>
+            <li>
+              <strong>Telecom:</strong> Our team has executed comprehensive Lead-to-Cash
+              implementations for leading telecom providers in Europe and India. These
+              solutions integrate Salesforce CRM, CPQ, and Zora to
+              enable streamlined customer acquisition, dynamic pricing, contract management, and billing.
+            </li>
+
+            <li>
+              <strong>Healthcare:</strong> For companies like BD, a global medical device leader, we
+              have enabled secure and compliant digital transformation using Salesforce Health Cloud
+              and custom solutions to improve patient engagement, sales operations, and internal collaboration.
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section: Case studies of completed projects -->
+  <section id="projects" class="projects-section scroll-section">
+    <h2 class="section-title">Our Case Studies</h2>
+    <div class="project-grid">
+      <div class="project-card" tabindex="0">
+        <img src="assets/images/Risland_India.png" alt="Project 1" class="project-image">
+        <div class="project-content">
+          <h3>Risland India</h3>
+          <p class="project-summary">Sales & Service Cloud Implementation for Real Estate</p>
+          <a href="#view-case-study-1" class="view-case-study">View Case Study</a>
+          <div class="project-details">
+            <p><strong>Goal:</strong> To implement Salesforce Sales and Service Cloud to enhance customer
+              experience,
+              operational efficiency, and financial performance in the Real Estate industry.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+              <li>Enquiry to Booking process implemented in Salesforce Platform.</li>
+              <li>Created customer 360-degree view.</li>
+              <li>Guided Booking creation and inventory blocking.</li>
+              <li>Product setup for 3 locations with demographic variations.</li>
+              <li>Automated business rules and approval processes.</li>
+              <li>Finance integrations and automated booking orchestration.</li>
+            </ul>
+            <p><strong>Technology Used:</strong></p>
+            <ul class="tech-list">
+              <li> Salesforce</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="project-card" tabindex="0">
+        <img src="assets/images/hero_finance.png" alt="Project 2" class="project-image">
+        <div class="project-content">
+          <h3>Hero Finance</h3>
+          <p class="project-summary">CPQ Implementation involves deploying salesforce Configure, Price, Quote
+            tools to
+            automate product configuration, pricing, and quote generation and efficient sales processes.</p>
+          <a href="#view-case-study-2" class="view-case-study">View Case Study</a>
+          <div class="project-details">
+            <p><strong>Goal:</strong> Streamlined pricing and quoting with a 40% reduction in quote generation
+              time and
+              25% improvement in deal closures.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+              <li>Automated quote generation and approvals.</li>
+              <li>Multi-tiered discount management.</li>
+              <li>CRM and customer data integration.</li>
+              <li>Automated contract generation and renewals.</li>
+              <li>Product catalog and pricing configuration.</li>
+            </ul>
+            <p><strong>Technology Used:</strong></p>
+            <ul class="tech-list">
+              <li>Salesforce CPQ</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" tabindex="0">
+        <img src="assets/images/RegionOFPeel-removebg-preview.png" alt="Project 3" class="project-image">
+        <div class="project-content">
+          <h3>Region of Peel</h3>
+          <p class="project-summary">Government Digitization is the use of digital technologies to streamline
+            public
+            services, improve efficiency, and enhance citizen engagement.</p>
+          <a href="#view-case-study-3" class="view-case-study">View Case Study</a>
+          <div class="project-details">
+            <p><strong>Goal:</strong> Digitized operations for the Government of Canada, enabling citizens to
+              file taxes
+              and apply for services online.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+              <li>Requirement analysis with user interviews.</li>
+              <li>Intuitive system for increased productivity.</li>
+              <li>Single repository with advanced analytics.</li>
+              <li>Lightning Template for customer community.</li>
+              <li>Classic to Lightning migration.</li>
+              <li>Ongoing support at reduced costs.</li>
+            </ul>
+            <p><strong>Technology Used:</strong></p>
+            <ul class="tech-list">
+              <li>Salesforce Lightning</li>
+              <li>Salesforce Classic</li>
+              <li>Apex</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" tabindex="0">
+        <img src="assets/images/bd.svg" alt="Project 4" class="project-image">
+        <div class="project-content">
+          <h3>BD</h3>
+          <p class="project-summary">Project Management Gantt Chart is a visual project planning tool that
+            displays
+            tasks along a timeline, helping teams track progress, manage dependencies, and ensure timely
+            completion of
+            project milestones.</p>
+          <a href="#view-case-study-4" class="view-case-study">View Case Study</a>
+          <div class="project-details">
+            <p><strong>Goal:</strong> Implemented a Gantt chart system for exhaustive project management using
+              custom
+              LWC.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+              <li>Integrated with custom Gantt JS library.</li>
+              <li>Developed custom Apex for Gantt features.</li>
+              <li>Custom VF Page for Gantt chart display.</li>
+            </ul>
+            <p><strong>Technology Used:</strong></p>
+            <ul class="tech-list">
+              <li>Salesforce</li>
+              <li>Visual Force</li>
+              <li>JavaScript</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-card" tabindex="0">
+        <img src="assets/images/cloudSynaps-removebg-preview.png" alt="Project 6" class="project-image">
+        <div class="project-content">
+          <h3>Cloud Synapps</h3>
+          <p class="project-summary">Dynamic Form System for Government refers to a digital solution that
+            enables
+            government agencies to create, manage, and customize interactive forms in real-time, allowing
+            efficient data
+            collection, automated processing, and improved citizen services through a user-friendly and adaptive
+            interface.</p>
+          <a href="#view-case-study-6" class="view-case-study">View Case Study</a>
+          <div class="project-details">
+            <p><strong>Goal:</strong> Built a drag-and-drop form system with digital signatures for government
+              use.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+              <li>Classic to Lightning conversion.</li>
+              <li>VisualForce to Lightning migration.</li>
+              <li>Custom LEX components.</li>
+              <li>Drag-and-drop UI for admins.</li>
+              <li>Support for multiple forms and S-Objects.</li>
+            </ul>
+            <p><strong>Technology Used:</strong></p>
+            <ul class="tech-list">
+              <li>Salesforce</li>
+              <li>Apex</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" tabindex="0">
+        <img src="assets/images/Integrate-with-Salesforce-CPQ-removebg-preview.png" alt="Project 7" class="project-image">
+        <div class="project-content">
+          <h3>CPQ Implementation</h3>
+          <p class="project-summary">Streamlined Billing and Sales Processes** refer to the integration of
+            automated
+            tools and workflows that simplify quoting, invoicing, and revenue management—resulting in faster
+            transactions, reduced errors, and improved customer satisfaction.</p>
+          <a href="#view-case-study-7" class="view-case-study">View Case Study</a>
+          <div class="project-details">
+            <p><strong>Goal:</strong> Reduced quote generation time by 30% and billing errors by 50% with
+              automated CPQ
+              processes.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+              <li>Product bundling and flexible pricing.</li>
+              <li>Automated quote generation.</li>
+              <li>Discount and approval workflows.</li>
+              <li>Usage-based billing.</li>
+              <li>Revenue recognition automation.</li>
+              <li>Contract and renewal management.</li>
+            </ul>
+            <p><strong>Technology Used:</strong></p>
+            <ul class="tech-list">
+              <li>Salesforce CPQ</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salesforce Apps Section: Showcase of custom apps -->
+  <section id="salesforce-apps" class="salesforce-apps-section scroll-section">
+    <div class="container">
+      <h2 class="section-title">Applications</h2>
+      <!-- Swipeable container for app cards -->
+      <div class="card-slider">
+        <!-- Email to Transaction App -->
+        <div class="salesforce-card">
+          <div class="text">
+            <h3>Email To Transaction</h3>
+            <p><strong>What:</strong> Enables new email services with configurable fields, filters specific
+              emails,
+              processes anti-spam emails, manages auto-assignments, and sends acknowledgment notifications.</p>
+            <p><strong>How:</strong> Built by configuring existing Salesforce modules, allowing additional
+              fields to be
+              easily customized.</p>
+            <p><strong>Usage:</strong> Improves efficiency by automating email workflows, reducing spam,
+              and providing real-time transaction updates to customers, leading to better customer
+              engagement and optimized processes.</p>
+          </div>
+          <div class="image">
+            <img src="assets/images/undraw_email-campaign_2z6t.svg" alt="Email to Transaction">
+          </div>
+        </div>
+        <!-- HRM App -->
+        <div class="salesforce-card">
+          
+          <div class="text">
+            <h3>HRM</h3>
+            <p><strong>What:</strong> Built on Salesforce CRM using custom LWC components for UI and Apex for
+              server-side logic.</p>
+            <p><strong>How:</strong> Utilizes Salesforce’s robust architecture with Lightning Web Components
+              (LWC) for
+              an intuitive UI, and Apex for handling complex server-side operations. It integrates all
+              HR-related tasks
+              into one seamless system.</p>
+            <p><strong>Usage:</strong> Simplifies employee management, automates HR workflows, decommissions
+              outdated
+              systems, leading to increased efficiency, data accuracy, and better resource allocation.</p>
+          </div>
+          <div class="image">
+            <img src="assets/images/undraw_team-page_q5am.svg" alt="HRM Tool">
+          </div>
+        </div>
+        <!-- Lead Assignment Engine App -->
+        <div class="salesforce-card">
+          <div class="text">
+            <h3>Lead Assignment Engine</h3>
+            <p><strong>What:</strong> A Salesforce-based solution designed to automate the distribution of leads
+              among
+              sales teams using various rules like round-robin, LIFO, FIFO, Zip Code Ranges, and City logic.</p>
+            <p><strong>How:</strong> Leverages Salesforce’s custom logic, queues, and automation tools to assign
+              leads
+              evenly across sales teams. Admins define lead assignment rules, and the engine runs based on these
+              inputs.
+            </p>
+            <p><strong>Usage:</strong> Streamlines the lead distribution process, ensuring fair allocation,
+              faster
+              response times, more efficient lead management, and improved sales outcomes.</p>
+          </div>
+          <div class="image">
+            <img src="assets/images/undraw_bear-market_dhi3.svg" alt="Lead Assignment Engine">
+          </div>
+        </div>
+
+
+        <!-- Case Management Automation App -->
+        <div class="salesforce-card">
+          <div class="text">
+            <h3>Case Management Automation</h3>
+            <p><strong>What:</strong> A Salesforce solution to automate support case tracking, assignment,
+              escalation, and
+              resolution across service teams.</p>
+            <p><strong>How:</strong> Utilizes Service Cloud, automation rules, SLAs, and AI-powered
+              recommendations to manage
+              the entire support lifecycle.</p>
+            <p><strong>Usage:</strong> Reduces manual workload, ensures faster issue resolution, improves
+              customer satisfaction,
+              and provides actionable service insights.</p>
+          </div>
+          <div class="image">
+            <img src="assets/images/undraw_sync-files_64mj.svg" alt="Case Management Automation">
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Slider navigation controls -->
+      <div class="slider-controls">
+        <button class="prev-btn" aria-label="Previous Slide">&#10094;</button>
+        <button class="next-btn" aria-label="Next Slide">&#10095;</button>
+      </div>
+      <div class="pagination-dots"></div>
+  </section>
+
+  <!-- About Section: Information about the company, scale, and founders -->
+  <section id="about4" class="about-section scroll-section">
+    <div class="container1">
+      <h2 class="section-title">About Us</h2>
+      <!-- Card 1: Company overview -->
+      <div class="about-card left">
+        <div class="text">
+          <h3>Who Are We?</h3>
+          <p>
+            ReaEspresso was founded by two passionate and visionary entrepreneurs,
+            <strong>Shashank Mishra</strong>, <strong>Ankush Gaikawad</strong> and 
+            <strong>Yahya Memon</strong>,who shared a common dream
+            of transforming the digital landscape. What began in a humble
+            one-room flat has now grown into a thriving company with
+            two full-fledged offices and a team of 10+ talented professionals
+            driving innovation every day.
+            From our roots in digital marketing, we quickly diversified into building
+            custom websites and mobile applications, helping businesses
+            establish their digital presence. As we grew, we recognized the increasing
+            demand for scalable, enterprise-grade solutions—and thus began our journey
+            into Salesforce implementation and consulting.<br>
+            Today, ReaEspresso stands at the forefront of
+            digital transformation,
+            empowering businesses across multiple industries to
+            streamline operations, improve customer experiences, and
+            accelerate growth. Our focus lies in mid to large-scale projects,
+            where we bring in-depth technical expertise, strategic thinking,
+            and a client-first approach.
+            Driven by our core values of innovation, integrity, and
+            impact, we are committed to delivering tailored solutions
+            that not only meet but exceed client expectations. Our mission is simple: to help businesses
+            unlock their full potential in a digital-first world.
+
+          </p>
+        </div>
+        <div class="image">
+          <img src="assets/images/undraw_team-spirit_18vw.svg" alt="Who are we">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about9" class="founders-section scroll-section">
+    <!-- <div class="founders-section"> -->
+      <h2 class="section-title">Meet Our Founders and Directors</h2>
+      <div class="founders-grid">
+        
+        <div class="founder-card">
+          <img src="assets/images/shashank.jpeg" alt="Shashank Mishra" class="founder-image">
+          <h4>Shashank Mishra</h4>
+          <p>Co-Founder & Digital Strategist</p>
+          <blockquote>"We believe in building partnerships that transform businesses for the better."</blockquote>
+        </div>
+        
+  
+        <div class="founder-card">
+          <img src="assets/images/yayhs.png" alt="New Founder Name" class="founder-image">
+          <h4>Yahya Memon</h4>
+          <p>Director</p>
+          <blockquote>"Driving financial strategies that fuel sustainable growth and long-term success."</blockquote>
+        </div>
+  
+      </div>
+  </section>
+
+
+  <!-- Founders Section: Profiles of company founders -->
+  <section id="founders-directors" class="founders-section scroll-section">
+    <!-- <div class="founders-section"> -->
+      <h2 class="section-title">Meet Our Professor's</h2>
+      <div class="founders-grid">
+        
+        <div class="founder-card">
+          <img src="assets/images/shashank.jpeg" alt="Shashank Mishra" class="founder-image">
+          <h4>Shashank Mishra</h4>
+          <p>Digital Strategist</p>
+          <blockquote>"We believe in building partnerships that transform businesses for the better."</blockquote>
+        </div>
+        
+        <div class="founder-card">
+          <img src="assets/images/ankush.jpeg" alt="Ankush Gaikawad" class="founder-image">
+          <h4>Ankush Gaikawad</h4>
+          <p>Salesforce Expert</p>
+          <blockquote>"Our mission is to empower businesses with Salesforce solutions that drive real impact."</blockquote>
+        </div>
+  
+        <div class="founder-card">
+          <img src="assets/images/yayhs.png" alt="New Founder Name" class="founder-image">
+          <h4>Yahya Memon</h4>
+          <p>director</p>
+          <blockquote>"Driving financial strategies that fuel sustainable growth and long-term success."</blockquote>
+        </div>
+  
+      </div>
+  </section>
+
+  
+  
+  <!-- Contact and Location Section -->
+  <section id="contact-form" class="contact-location-section scroll-section">
+    <div class="container2">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">We’d love to hear from you! Fill out the form or visit us at our location.</p>
+      <div class="contact-location-container">
+        <!-- Contact Form (Left) -->
+        <div class="contact-form-wrapper">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form"
+            autocomplete="off">
+            <div class="form-row">
+              <input type="hidden" name="access_key" value="75c61323-497f-4a76-8d30-8428833562ff">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="first-name" name="first-name" autocomplete="off" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" autocomplete="off" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" autocomplete="off" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 1234567890"
+                  autocomplete="off" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">How We Can Help You?</label>
+              <textarea id="message" name="message" rows="3" autocomplete="off" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Submit</button>
+          </form>
+        </div>
+        <!-- Location and Map (Right) -->
+        <div class="location-map-wrapper">
+          <!-- <h3 class="location-title">Our Location</h3> -->
+          <p class="location-text">
+            Reaespresso Digital Proptech Pvt Ltd, <br>
+            G-08, Eternity Commercial premises,Teen Hath Naka Bridge,<br>
+            LBS Marg, Thane , Maharashtra 400604, India<br>
+          </p>
+          <p><strong>EMAIL US :</strong> sales@reaespresso.com</p>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps?q=Teen+Hath+Naka+Bridge,+S-08,+Eternity+Commercial+premises,+LBS+Marg,+Thane,+Maharashtra+400604,+India&output=embed"
+              width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              title="Our Location - Salesforce Street"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: Contact info, company details, and back-to-top button -->
+  <footer id="footer" class="custom-footer fade-in scroll-section ">
+    <div class="footer-content ">
+      <div class="footer-left">
+        <!-- Company logo and info -->
+        <div class="company-info">
+          <a href="\"><img src="assets/images/logo242424.png" alt="ReaEspresso Logo" class="footer-logo"></a>
+        </div>
+        <p class="tagline">Trust. Value. Velocity</p>
+        <!-- Copyright and legal links -->
+        <p class="copyright">
+          <a href="/legal/privacy_notice.html">Privacy Notice</a> |
+          <a href="/legal/cookie_policy.html">Cookie Policy</a> |
+          <a href="/legal/statutory-compliance.html">Statutory Compliance</a> |
+          <a href="/legal/terms-of-use.html">Term of Use</a><br>
+          © 2025 ReaEspresso. Managed by Reaespresso. All Rights Reserved.
+          
+
+        </p>
+        <p class="footer-location"> Reaespresso Digital Proptech Pvt Ltd, G-08, Eternity Commercial premises, Teen Hath Naka Bridge, LBS Marg, Thane ,
+          Maharashtra 400604, India</p>
+      </div>
+      <div class="footer-right">
+        <h4 class="quick-links-title">Direct Links</h4>
+        <ul class="quick-links">
+          <li><img src="assets/images/linkedin.png" alt="LinkedIn" class="icon"> <a
+              href="https://www.linkedin.com/company/107035292/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BPjigJWqSTJKGAxC0fGD%2F3A%3D%3D">LinkedIn</a>
+          </li>
+          <li><img src="assets/images/whatsapp.png" alt="WhatsApp" class="icon"> <a
+              href="https://wa.me/918097904244">WhatsApp</a></li>
+          <li><img src="assets/images/facebook.png" alt="Facebook" class="icon"> <a
+              href="https://www.facebook.com/share/16PgB65Vn8/">Facebook</a></li>
+          <li><img src="assets/images/instagram.png" alt="Instagram" class="icon"> <a
+                href="https://www.instagram.com/reaespresso?igsh=NTRya3BldWxhd3Zphttps://www.instagram.com/reaespressotech?igsh=MXcxcmRnN2Z3cjRkdw==">Instagram</a></li>
+          <li><img src="assets/images/mail.png" alt="Contact-form" class="icon"> sales@reaespresso.com<a
+              href="sales@reaespresso.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Back-to-top button for quick navigation -->
+    <a href="#" class="back-to-top">↑</a>
+  </footer>
+
+  <!-- WhatsApp Contact Icon -->
+  <a href="https://wa.me/918097904244" class="whatsapp-contact" target="_blank" aria-label="Contact us on WhatsApp">
+    <img src="assets/images/whatsapp.png" alt="WhatsApp Icon" class="whatsapp-icon">
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
