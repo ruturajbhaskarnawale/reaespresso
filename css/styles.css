@@ -481,6 +481,16 @@ body {
   .navbar-right {
     gap: 0px;
   }
+  /* Logo text styles for this breakpoint */
+  .logo-text {
+    font-size: 11px; /* Slightly smaller than base */
+    font-weight: bold;
+    color: var(--dark);
+    text-align: left;
+    margin-top: 0;
+    letter-spacing: 0.9px;
+    padding-left: 70px; /* Adjusted to align with logo */
+  }
 }
 
 @media (max-width: 768px) {
@@ -545,6 +555,16 @@ body {
     width: 22px;
     height: 2px;
   }
+  /* Logo text styles for this breakpoint */
+  .logo-text {
+    font-size: 10px; /* Smaller for tablet screens */
+    font-weight: bold;
+    color: var(--dark);
+    text-align: left;
+    margin-top: 0;
+    letter-spacing: 0.8px;
+    padding-left: 40px; /* Adjusted to align with logo */
+  }
 }
 
 @media (max-width: 480px) {
@@ -574,6 +594,16 @@ body {
 
   .hamburger span {
     width: 20px;
+  }
+  /* Logo text styles for this breakpoint */
+  .logo-text {
+    font-size: 9px; /* Smaller for mobile screens */
+    font-weight: bold;
+    color: var(--dark);
+    text-align: left;
+    margin-top: 0;
+    letter-spacing: 0.6px;
+    padding-left: 45px; /* Adjusted to align with logo */
   }
 }
 
@@ -619,8 +649,41 @@ body {
     width: 20px;
     height: 2px;
   }
+  /* Logo text styles for this breakpoint */
+  .logo-text {
+    font-size: 8px; /* Smallest for very small screens */
+    font-weight: bold;
+    color: var(--dark);
+    text-align: left;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+    padding-left: 50px; /* Adjusted to align with logo */
+  }
+}
+/* For larger screens (above 1024px), define base styles outside media queries */
+.logo-text {
+  font-size: 12px; /* Base font size */
+  font-weight: bold;
+  color: var(--dark);
+  text-align: left;
+  margin-top: 0;
+  letter-spacing: 1px;
+  padding-left: 45px; /* Base padding */
 }
 
+/* For extra large screens (e.g., above 1200px) */
+@media (min-width: 1201px) {
+  .logo-text {
+    font-size: 14px; /* Larger font for bigger screens */
+    letter-spacing: 1.2px;
+    padding-left: 80px; /* Slightly more padding */
+  }
+
+  .main-logo {
+    width: 150px; /* Slightly larger logo */
+    margin-left: 35px;
+  }
+}
 
 /* ==========================================================================
      Hero Section
@@ -876,7 +939,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 120px;
 }
 
 .demo-text {
@@ -1314,7 +1377,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .founders-section .section-title {
@@ -1332,7 +1395,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .projects-section .section-title {
@@ -1636,6 +1699,7 @@ body {
     color: var(--primary); /* Blue color to differentiate */
     font-size: 2.8rem;
     margin-bottom: 50px;
+    margin-top: 120px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for readability */
   }
   
@@ -2476,7 +2540,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 /* Grid Layout */
@@ -2812,7 +2876,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .demo-container {
@@ -2903,7 +2967,7 @@ body {
   text-align: center;
   font-size: 2.7rem;
   margin: 20px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .contact-location-container {
